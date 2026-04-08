@@ -1,11 +1,18 @@
 import inspect
 import os
 
+import torch
 from datasets import load_dataset
 from huggingface_hub import login
+from unsloth import FastLanguageModel
 from transformers import TrainingArguments
 from trl import SFTTrainer
-from unsloth import FastLanguageModel
+
+if not torch.cuda.is_available():
+    raise RuntimeError(
+        "GPU not detected. In Colab go to Runtime > Change runtime type > Hardware accelerator = GPU, "
+        "then restart runtime and rerun all cells."
+    )
 
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
 if not HF_TOKEN or not HF_TOKEN.startswith("hf_"):
