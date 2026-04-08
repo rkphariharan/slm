@@ -1,0 +1,13 @@
+{
+  "old_train_rows": 4500,
+  "old_valid_rows": 500,
+  "new_mapping_rows_total": 56,
+  "new_mapping_train_rows": 50,
+  "new_mapping_valid_rows": 6,
+  "mixed_train_rows": 4550,
+  "mixed_valid_rows": 506,
+  "sources": {
+    "synthetic": "C:\\Users\\h19\\OneDrive - Capgemini\\Desktop\\vscode\\4thaxis\\synthetic",
+    "demo_dataset": "C:\\Users\\h19\\OneDrive - Capgemini\\Desktop\\vscode\\4thaxis\\demo\\dataset"
+  }
+}
